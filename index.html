@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var arr = [1, 1, 1, 2, 3, 2, 4];
+    var name = 'wuixn'
+    var obj = {
+        name: 'dan',
+        age: null,
+        arr: [1, 2, 4],
+        init: function() {
+            console.log(this.name)
+        }
+    }
+    Array.prototype.unique = function() {
+        var obj = {},
+            len = this.length,
+            arr = [];
+        for (var i = 0; i < len; i++) {
+            if (!obj[this[i]]) {
+                obj[this[i]] = 'abc';
+                arr.push(this[i])
+            }
+
+        }
+        return arr
+    }
+    var arr2 = arr.unique();
+    console.log('arr2', arr2)
+
+    function deepCopy(obj) {
+        var result = Array.isArray(obj) ? [] : {};
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                if (typeof obj[key] === 'object' && obj[key] !== null) {
+                    result[key] = deepCopy(obj[key]); //递归复制
+                } else {
+                    result[key] = obj[key];
+                }
+            }
+        }
+        return result;
+    }
+    </script>
+    <script type="text/javascript" src='./tools.js'></script>
+</body>
+</html>

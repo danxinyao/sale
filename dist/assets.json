@@ -1,0 +1,16 @@
+{
+  "build": [
+    "build.8b6e4db0530884c21cd2.js",
+    "style.8b6e4db0530884c21cd2.css",
+    "build.8b6e4db0530884c21cd2.js.map",
+    "style.8b6e4db0530884c21cd2.css.map"
+  ],
+  "common": [
+    "common.d6808596dd8a44849a02.js",
+    "common.d6808596dd8a44849a02.js.map"
+  ],
+  "vendor": [
+    "vendor.85d39e716b756ac54631.js",
+    "vendor.85d39e716b756ac54631.js.map"
+  ]
+}
